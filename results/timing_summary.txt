@@ -1,0 +1,18 @@
+Post-Place-and-Route Frequency Summary
+======================================
+
+This summary compares the maximum post-place-and-route frequencies
+reported for the 32-bit CPU/ALU design using different adder architectures.
+
+Adder Architecture       Maximum Frequency
+------------------       -----------------
+Carry Ripple Adder       160.000 MHz
+Carry Lookahead Adder    157.870 MHz
+Carry Skip Adder         163.180 MHz
+Carry Select Adder       160.102 MHz
+
+Observation:
+The Carry Skip Adder achieved the highest reported maximum frequency
+among the evaluated architectures. The results show that adder choice
+affects timing performance after physical implementation, even when the
+higher-level CPU/ALU datapath remains consistent.
